@@ -21,7 +21,7 @@ class DettaglioGiocatoreController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
    
-           nomeGiocatore.text  = giocatore.cognome + " " + giocatore.nome
+          nomeGiocatore.text  = giocatore.cognome + " " + giocatore.nome
          let url_avatar = URL(string: giocatore.urlAvatar)
           imgGiocatore.kf.setImage(with: url_avatar)
         

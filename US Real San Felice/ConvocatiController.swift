@@ -1,57 +1,53 @@
 //
-//  RosaController.swift
+//  ConvocatiController.swift
 //  US Real San Felice
 //
-//  Created by Sabato Russo on 26/11/16.
+//  Created by Russo Sabato (Italdata spa) on 28/11/16.
 //  Copyright © 2016 Russo Sabato. All rights reserved.
 //
-
 import UIKit
 import Kingfisher
 import  Alamofire
 import SwiftyJSON
 
-class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegate {
-   
-   
+class ConvocatiController: UIViewController ,UITableViewDataSource,UITableViewDelegate {
 
-
-    @IBOutlet var imgRosa: UIImageView!
     
-    @IBOutlet var tableRosa: UITableView!
+    
+    @IBOutlet weak var avversariLabel: UILabel!
+    @IBOutlet weak var note: UITextView!
+     @IBOutlet var tableConvocati: UITableView!
     var giocatori :[Giocatore] = [];
     var giocaSelct:Giocatore!;
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-  
-        self.tableRosa.dataSource = self;
-        self.tableRosa.delegate = self;
+       
+    
+        self.tableConvocati.dataSource = self;
+        self.tableConvocati.delegate = self;
         
         
         let nib = UINib(nibName: "GiocatoreViewCell", bundle: nil)
-        tableRosa.register(nib, forCellReuseIdentifier: "row_giocatore")
-        
-        loadRosa ()
-        let url_rosa = URL(string: Config.imgRosa)
-        imgRosa.kf.setImage(with: url_rosa)
-      
-    
+        tableConvocati.register(nib, forCellReuseIdentifier: "row_giocatore")
+         loadConvocati ()
     }
+
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+        // Dispose of any resources that can be recreated.
+    }
+    
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
        
         
+        
+        
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-       
-    }
-    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
@@ -63,7 +59,7 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = self.tableRosa.dequeueReusableCell(withIdentifier: "row_giocatore",for: indexPath as IndexPath) as? GiocatoreViewCell
+        let cell = self.tableConvocati.dequeueReusableCell(withIdentifier: "row_giocatore",for: indexPath as IndexPath) as? GiocatoreViewCell
         
         let row =   indexPath.row
         
@@ -84,31 +80,23 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
     }
     
     
-  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-                   return 55
-    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 55
+        
     }
+
     
     
- func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
-        //  self.performSegueWithIdentifier("go_to_prodotti"   , sender:self)
-        let row = indexPath.row
-         self.giocaSelct = giocatori[row];
-         self.performSegue(withIdentifier: "go_dettaglio_giocatore"   , sender:self)
-    
-    }
-    
-    
-    
-    
-    func loadRosa () {
-    
-        Alamofire.request(Config.pathRosa).validate().responseJSON { response in
+    func loadConvocati () {
+        
+        Alamofire.request(Config.pathConvocati).validate().responseJSON { response in
             switch response.result {
             case .success(let value):
                 let json = JSON(value)
-               
-                for (_,subJson):(String, JSON) in json {
+                
+                self.note.text = json["note"].string!;
+                self.avversariLabel.text = json["avv"].string!;
+                for (_,subJson):(String, JSON) in json["convocati"] {
                     let giocatore:Giocatore = Giocatore();
                     
                     giocatore.nome = subJson["nome"].string!
@@ -122,30 +110,34 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
                     giocatore.altezza = subJson["altezza"].string!
                     
                     self.giocatori.append(giocatore);
-                   
+                    
                     
                 }
+                
+                
                 self.giocatori.reverse();
-                self.tableRosa!.reloadData()
+                self.tableConvocati!.reloadData()
             case .failure(let error):
                 print(error)
             }
         }
     }
     
+    func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
+        //  self.performSegueWithIdentifier("go_to_prodotti"   , sender:self)
+        let row = indexPath.row
+        self.giocaSelct = giocatori[row];
+        self.performSegue(withIdentifier: "go_dettaglio2_giocatore"   , sender:self)
+        
+    }
+   
     
     
-
-    
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
-         let nav = segue.destination as! DettaglioGiocatoreController
+        let nav = segue.destination as! DettaglioGiocatoreController
         nav.giocatore = giocaSelct;
     }
-    
 
 }
