@@ -24,7 +24,7 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
     
     override func viewDidLoad() {
         super.viewDidLoad()
-    
+    self.navigationController?.isNavigationBarHidden = false
         self.tableRosa.dataSource = self;
         self.tableRosa.delegate = self;
         
@@ -35,13 +35,21 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
         // Do any additional setup after loading the view.
         let url_rosa = URL(string: Config.imgRosa)
          imgRosa.kf.setImage(with: url_rosa)
-    loadRosa ()
+      
     
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+         loadRosa ()
+        
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+       
     }
     
     
