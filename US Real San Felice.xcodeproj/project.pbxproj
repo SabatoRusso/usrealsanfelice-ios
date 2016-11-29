@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1B349E0A1DE6CF8600AFBB12 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B349E091DE6CF8600AFBB12 /* AppDelegate.swift */; };
-		1B349E0C1DE6CF8600AFBB12 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B349E0B1DE6CF8600AFBB12 /* ViewController.swift */; };
+		1B349E0C1DE6CF8600AFBB12 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B349E0B1DE6CF8600AFBB12 /* HomeController.swift */; };
 		1B349E0F1DE6CF8600AFBB12 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B349E0D1DE6CF8600AFBB12 /* Main.storyboard */; };
 		1B349E121DE6CF8600AFBB12 /* US_Real_San_Felice.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1B349E101DE6CF8600AFBB12 /* US_Real_San_Felice.xcdatamodeld */; };
 		1B349E141DE6CF8600AFBB12 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1B349E131DE6CF8600AFBB12 /* Assets.xcassets */; };
@@ -23,13 +23,14 @@
 		B77ABF1E1DE9F6D1006385AE /* Giocatore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF1D1DE9F6D1006385AE /* Giocatore.swift */; };
 		B77ABF201DEA08E8006385AE /* DettaglioGiocatoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF1F1DEA08E8006385AE /* DettaglioGiocatoreController.swift */; };
 		B77ABF221DEA1973006385AE /* ViewDettaglio.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77ABF211DEA1973006385AE /* ViewDettaglio.xib */; };
+		B7EE8DCF1DEE21D100A0A863 /* Partita.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EE8DCE1DEE21D100A0A863 /* Partita.swift */; };
 		D5CCE11AEACAA6BC9D311FFA /* Pods_US_Real_San_Felice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB614648CBA49CC88FEA520 /* Pods_US_Real_San_Felice.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1B349E061DE6CF8600AFBB12 /* US Real San Felice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "US Real San Felice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1B349E091DE6CF8600AFBB12 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1B349E0B1DE6CF8600AFBB12 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1B349E0B1DE6CF8600AFBB12 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		1B349E0E1DE6CF8600AFBB12 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1B349E111DE6CF8600AFBB12 /* US_Real_San_Felice.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = US_Real_San_Felice.xcdatamodel; sourceTree = "<group>"; };
 		1B349E131DE6CF8600AFBB12 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		B77ABF1D1DE9F6D1006385AE /* Giocatore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Giocatore.swift; sourceTree = "<group>"; };
 		B77ABF1F1DEA08E8006385AE /* DettaglioGiocatoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DettaglioGiocatoreController.swift; sourceTree = "<group>"; };
 		B77ABF211DEA1973006385AE /* ViewDettaglio.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewDettaglio.xib; sourceTree = "<group>"; };
+		B7EE8DCE1DEE21D100A0A863 /* Partita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partita.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,7 +103,7 @@
 		B77ABF0E1DE9E84B006385AE /* pages */ = {
 			isa = PBXGroup;
 			children = (
-				1B349E0B1DE6CF8600AFBB12 /* ViewController.swift */,
+				1B349E0B1DE6CF8600AFBB12 /* HomeController.swift */,
 				B77ABF0F1DE9E872006385AE /* RosaController.swift */,
 				B77ABF1F1DEA08E8006385AE /* DettaglioGiocatoreController.swift */,
 				B77ABF211DEA1973006385AE /* ViewDettaglio.xib */,
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				B77ABF1D1DE9F6D1006385AE /* Giocatore.swift */,
+				B7EE8DCE1DEE21D100A0A863 /* Partita.swift */,
 			);
 			name = to;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				TargetAttributes = {
 					1B349E051DE6CF8600AFBB12 = {
 						CreatedOnToolsVersion = 8.1;
+						DevelopmentTeam = PT7ZNLU7CB;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -288,13 +292,14 @@
 			files = (
 				1B3F30D21DEC239800D1C442 /* ViewDettagli.swift in Sources */,
 				B77ABF101DE9E872006385AE /* RosaController.swift in Sources */,
-				1B349E0C1DE6CF8600AFBB12 /* ViewController.swift in Sources */,
+				1B349E0C1DE6CF8600AFBB12 /* HomeController.swift in Sources */,
 				B77ABF131DE9EAB2006385AE /* Config.swift in Sources */,
 				B77ABF1B1DE9F633006385AE /* extensions.swift in Sources */,
 				1B349E121DE6CF8600AFBB12 /* US_Real_San_Felice.xcdatamodeld in Sources */,
 				B77ABF171DE9EECB006385AE /* GiocatoreViewCell.swift in Sources */,
 				1B3F30D41DEC4A2000D1C442 /* ConvocatiController.swift in Sources */,
 				1B349E0A1DE6CF8600AFBB12 /* AppDelegate.swift in Sources */,
+				B7EE8DCF1DEE21D100A0A863 /* Partita.swift in Sources */,
 				B77ABF1E1DE9F6D1006385AE /* Giocatore.swift in Sources */,
 				B77ABF201DEA08E8006385AE /* DettaglioGiocatoreController.swift in Sources */,
 			);
@@ -420,11 +425,13 @@
 			baseConfigurationReference = 4742A8594C7FEF2B3E81DBBE /* Pods-US Real San Felice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PT7ZNLU7CB;
 				INFOPLIST_FILE = "US Real San Felice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "srusso.usrealsanfelice.ios.US-Real-San-Felice";
+				PRODUCT_BUNDLE_IDENTIFIER = srusso.usrealsanfelice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -433,11 +440,13 @@
 			baseConfigurationReference = B006751C5D3A987B145CB180 /* Pods-US Real San Felice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = PT7ZNLU7CB;
 				INFOPLIST_FILE = "US Real San Felice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "srusso.usrealsanfelice.ios.US-Real-San-Felice";
+				PRODUCT_BUNDLE_IDENTIFIER = srusso.usrealsanfelice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
