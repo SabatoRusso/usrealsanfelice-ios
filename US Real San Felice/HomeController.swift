@@ -12,7 +12,9 @@ import  Alamofire
 import SwiftyJSON
 import Spring
 import NYTPhotoViewer
-class HomeController: UIViewController ,NYTPhotosViewControllerDelegate{
+
+
+class HomeController:  GalleryController{
 
     @IBOutlet var labelOspite: UILabel!
     @IBOutlet var labelLocale: UILabel!
@@ -22,12 +24,12 @@ class HomeController: UIViewController ,NYTPhotosViewControllerDelegate{
     
     @IBOutlet var labelDataGiornata: UILabel!
     
-     fileprivate var photosGallery  : [ImageGallery] = []
+     
     fileprivate var  partita:Partita = Partita();
     
     override func viewDidLoad() {
         super.viewDidLoad()
-            self.navigationController?.isNavigationBarHidden = true
+        self.navigationController?.isNavigationBarHidden = true
         labelRisultato.layer.masksToBounds = true
         labelRisultato.layer.cornerRadius = 5
         viewUltimaPartita.layer.masksToBounds = true
@@ -49,8 +51,7 @@ class HomeController: UIViewController ,NYTPhotosViewControllerDelegate{
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+           }
 
     
     func loadUltimaPartita () {
@@ -75,12 +76,14 @@ class HomeController: UIViewController ,NYTPhotosViewControllerDelegate{
                 self.viewUltimaPartita.isHidden = false;
                 self.viewUltimaPartita.animate()
                 var i = 0;
-                for (index,subJson):(String, JSON) in json["imgs"] {
+                
+                for (_,subJson):(String, JSON) in json["imgs"] {
                   let title = NSAttributedString(string: self.labelDataGiornata.text! , attributes: [NSForegroundColorAttributeName: UIColor.white])
                     
-                    
-                 self.photosGallery.append(ImageGallery(image: nil,imageData: nil,attributedCaptionTitle: title))
-                   // p.attributedCaptionSummary = NSAttributedString(string: photo.frase , attributes: //[NSForegroundColorAttributeName: UIColor.grayColor()])
+                    let imageGal:ImageGallery = ImageGallery(image: nil,imageData: nil,attributedCaptionTitle: title)
+                    imageGal.attributedCaptionSummary = NSAttributedString(string: self.partita.locali + " VS " + self.partita.ospiti + " (" + self.partita.gol_loc + "-" + self.partita.gol_osp + ")"  , attributes: [NSForegroundColorAttributeName: UIColor.gray])
+                    self.photosGallery.append(imageGal);
+                   
                     let url = URL(string: subJson.string!)
                     self.downloadImage(url: url! ,idx: i);
                     i = i + 1;
@@ -105,86 +108,12 @@ class HomeController: UIViewController ,NYTPhotosViewControllerDelegate{
     }
     
     
-    func getDataFromUrl(url: URL, completion: @escaping (_ data: Data?, _  response: URLResponse?, _ error: Error?) -> Void) {
-        URLSession.shared.dataTask(with: url) {
-            (data, response, error) in
-            completion(data, response, error)
-            }.resume()
-    }
-    
-    
-    func downloadImage(url: URL , idx:Int) {
-        print("Download Started")
-        getDataFromUrl(url: url) { (data, response, error)  in
-            guard let data = data, error == nil else { return }
-            print(response?.suggestedFilename ?? url.lastPathComponent)
-            print("Download Finished")
-            DispatchQueue.main.async() { () -> Void in
-               
-                let im = UIImage(data: data)
-                
-                self.photosGallery[idx].image = im;
-                
-            }
-        }
-    }
+
     
     
     
     
-    func updateImagesOnPhotosViewController(_ photosViewController: NYTPhotosViewController, afterDelayWithPhotos: [ImageGallery]) {
-        let delayTime = DispatchTime.now() + Double(5 * Int64(NSEC_PER_SEC)) / Double(NSEC_PER_SEC)
-        // photos[0].attributedCaptionSummary = NSAttributedString(string: frase.text! , attributes: [NSForegroundColorAttributeName: UIColor.grayColor()])
-        DispatchQueue.main.asyncAfter(deadline: delayTime) {
-           /* for photo in self.photosGallery {
-                if photo.image == nil {
-                    photo.image = UIImage(named: PrimaryImageName)
-                    photosViewController.updateImageForPhoto(photo)
-                }
-            }*/
-        }
-        
-    }
     
-    
-    
-    func photosViewController(_ photosViewController: NYTPhotosViewController, referenceViewFor photo: NYTPhoto) -> UIView? {
-        
-        /*if photo as? ExamplePhoto == photosGallery[NoReferenceViewPhotoIndex] {
-         return nil
-         }
-         */
-        
-        return nil;
-        
-    }
-    
-    func photosViewController(_ photosViewController: NYTPhotosViewController, loadingViewFor photo: NYTPhoto) -> UIView? {
-       /* if photo as! ImageGallery == photosGallery[CustomEverythingPhotoIndex] {
-            let label = UILabel()
-            label.text = "Custom Loading..."
-            label.textColor = UIColor.green
-            return label
-        }*/
-        
-        return nil
-    }
-    
-    
-    
-    func photosViewController(_ photosViewController: NYTPhotosViewController, didNavigateTo photo: NYTPhoto, at photoIndex: UInt) {
-        print("Did Navigate To Photo: \(photo) identifier: \(photoIndex)")
-        
-        
-    }
-    
-    func photosViewController(_ photosViewController: NYTPhotosViewController, actionCompletedWithActivityType activityType: String?) {
-        print("Action Completed With Activity Type: \(activityType)")
-    }
-    
-    func photosViewControllerDidDismiss(_ photosViewController: NYTPhotosViewController) {
-        print("Did dismiss Photo Viewer: \(photosViewController)")
-    }
 
 }
 

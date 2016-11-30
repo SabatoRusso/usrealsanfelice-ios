@@ -15,6 +15,7 @@
 		1B349E171DE6CF8600AFBB12 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1B349E151DE6CF8600AFBB12 /* LaunchScreen.storyboard */; };
 		1B3F30D21DEC239800D1C442 /* ViewDettagli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F30D11DEC239800D1C442 /* ViewDettagli.swift */; };
 		1B3F30D41DEC4A2000D1C442 /* ConvocatiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F30D31DEC4A2000D1C442 /* ConvocatiController.swift */; };
+		1B43E7EA1DEECAD900E6E358 /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B43E7E91DEECAD900E6E358 /* GalleryController.swift */; };
 		B77ABF101DE9E872006385AE /* RosaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF0F1DE9E872006385AE /* RosaController.swift */; };
 		B77ABF131DE9EAB2006385AE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF121DE9EAB2006385AE /* Config.swift */; };
 		B77ABF171DE9EECB006385AE /* GiocatoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF151DE9EECB006385AE /* GiocatoreViewCell.swift */; };
@@ -39,6 +40,7 @@
 		1B349E181DE6CF8600AFBB12 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1B3F30D11DEC239800D1C442 /* ViewDettagli.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewDettagli.swift; sourceTree = "<group>"; };
 		1B3F30D31DEC4A2000D1C442 /* ConvocatiController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConvocatiController.swift; sourceTree = "<group>"; };
+		1B43E7E91DEECAD900E6E358 /* GalleryController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GalleryController.swift; sourceTree = "<group>"; };
 		3EB614648CBA49CC88FEA520 /* Pods_US_Real_San_Felice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_US_Real_San_Felice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4742A8594C7FEF2B3E81DBBE /* Pods-US Real San Felice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-US Real San Felice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-US Real San Felice/Pods-US Real San Felice.debug.xcconfig"; sourceTree = "<group>"; };
 		B006751C5D3A987B145CB180 /* Pods-US Real San Felice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-US Real San Felice.release.xcconfig"; path = "Pods/Target Support Files/Pods-US Real San Felice/Pods-US Real San Felice.release.xcconfig"; sourceTree = "<group>"; };
@@ -136,6 +138,7 @@
 			isa = PBXGroup;
 			children = (
 				B77ABF1A1DE9F633006385AE /* extensions.swift */,
+				1B43E7E91DEECAD900E6E358 /* GalleryController.swift */,
 			);
 			name = utility;
 			sourceTree = "<group>";
@@ -301,6 +304,7 @@
 				1B349E121DE6CF8600AFBB12 /* US_Real_San_Felice.xcdatamodeld in Sources */,
 				B77ABF171DE9EECB006385AE /* GiocatoreViewCell.swift in Sources */,
 				1B3F30D41DEC4A2000D1C442 /* ConvocatiController.swift in Sources */,
+				1B43E7EA1DEECAD900E6E358 /* GalleryController.swift in Sources */,
 				1B349E0A1DE6CF8600AFBB12 /* AppDelegate.swift in Sources */,
 				B7EE8DCF1DEE21D100A0A863 /* Partita.swift in Sources */,
 				B7BDEA031DEE4490008B3E6E /* ImageGallery.swift in Sources */,
