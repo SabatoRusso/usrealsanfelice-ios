@@ -23,6 +23,7 @@
 		B77ABF1E1DE9F6D1006385AE /* Giocatore.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF1D1DE9F6D1006385AE /* Giocatore.swift */; };
 		B77ABF201DEA08E8006385AE /* DettaglioGiocatoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF1F1DEA08E8006385AE /* DettaglioGiocatoreController.swift */; };
 		B77ABF221DEA1973006385AE /* ViewDettaglio.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77ABF211DEA1973006385AE /* ViewDettaglio.xib */; };
+		B7BDEA031DEE4490008B3E6E /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDEA021DEE4490008B3E6E /* ImageGallery.swift */; };
 		B7EE8DCF1DEE21D100A0A863 /* Partita.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EE8DCE1DEE21D100A0A863 /* Partita.swift */; };
 		D5CCE11AEACAA6BC9D311FFA /* Pods_US_Real_San_Felice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB614648CBA49CC88FEA520 /* Pods_US_Real_San_Felice.framework */; };
 /* End PBXBuildFile section */
@@ -49,6 +50,7 @@
 		B77ABF1D1DE9F6D1006385AE /* Giocatore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Giocatore.swift; sourceTree = "<group>"; };
 		B77ABF1F1DEA08E8006385AE /* DettaglioGiocatoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DettaglioGiocatoreController.swift; sourceTree = "<group>"; };
 		B77ABF211DEA1973006385AE /* ViewDettaglio.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewDettaglio.xib; sourceTree = "<group>"; };
+		B7BDEA021DEE4490008B3E6E /* ImageGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
 		B7EE8DCE1DEE21D100A0A863 /* Partita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partita.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -143,6 +145,7 @@
 			children = (
 				B77ABF1D1DE9F6D1006385AE /* Giocatore.swift */,
 				B7EE8DCE1DEE21D100A0A863 /* Partita.swift */,
+				B7BDEA021DEE4490008B3E6E /* ImageGallery.swift */,
 			);
 			name = to;
 			sourceTree = "<group>";
@@ -300,6 +303,7 @@
 				1B3F30D41DEC4A2000D1C442 /* ConvocatiController.swift in Sources */,
 				1B349E0A1DE6CF8600AFBB12 /* AppDelegate.swift in Sources */,
 				B7EE8DCF1DEE21D100A0A863 /* Partita.swift in Sources */,
+				B7BDEA031DEE4490008B3E6E /* ImageGallery.swift in Sources */,
 				B77ABF1E1DE9F6D1006385AE /* Giocatore.swift in Sources */,
 				B77ABF201DEA08E8006385AE /* DettaglioGiocatoreController.swift in Sources */,
 			);

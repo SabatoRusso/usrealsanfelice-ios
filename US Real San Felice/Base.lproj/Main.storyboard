@@ -30,7 +30,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6KR-2d-VCt">
                                 <rect key="frame" x="10" y="10" width="300" height="484"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rT1-3b-VDL">
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rT1-3b-VDL" customClass="SpringView" customModule="Spring">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="121"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Data e giornata" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VjF-hD-3gB">
@@ -69,13 +69,17 @@
                                                     <constraint firstItem="bZJ-LG-vym" firstAttribute="height" secondItem="UlK-pR-uDN" secondAttribute="height" multiplier="0.3" id="tAc-Qk-j2p"/>
                                                 </constraints>
                                             </view>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_perm_media_white" translatesAutoresizingMaskIntoConstraints="NO" id="wtn-BM-5qJ">
-                                                <rect key="frame" x="132.5" y="93" width="25" height="25"/>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYi-Cn-nSK">
+                                                <rect key="frame" x="137.5" y="94" width="25" height="25"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="height" constant="25" id="56f-VG-XPh"/>
-                                                    <constraint firstAttribute="width" constant="25" id="UUf-JG-g5W"/>
+                                                    <constraint firstAttribute="width" constant="25" id="BqE-Ch-d04"/>
+                                                    <constraint firstAttribute="height" constant="25" id="Eft-eN-CVx"/>
                                                 </constraints>
-                                            </imageView>
+                                                <state key="normal" backgroundImage="ic_perm_media_white"/>
+                                                <connections>
+                                                    <action selector="vediGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUs-jV-ffJ"/>
+                                                </connections>
+                                            </button>
                                         </subviews>
                                         <color key="backgroundColor" red="0.99607843139999996" green="0.79215686269999996" blue="0.1176470588" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
@@ -84,23 +88,42 @@
                                             <constraint firstItem="59F-N4-MVp" firstAttribute="leading" secondItem="UlK-pR-uDN" secondAttribute="trailing" id="8cB-ah-740"/>
                                             <constraint firstItem="VjF-hD-3gB" firstAttribute="leading" secondItem="rT1-3b-VDL" secondAttribute="leading" id="CP0-kG-Xyc"/>
                                             <constraint firstItem="g9S-1D-tKI" firstAttribute="leading" secondItem="rT1-3b-VDL" secondAttribute="leading" id="Eay-ba-8R4"/>
+                                            <constraint firstItem="yYi-Cn-nSK" firstAttribute="centerX" secondItem="rT1-3b-VDL" secondAttribute="centerX" id="ObO-7Q-EzZ"/>
                                             <constraint firstItem="VjF-hD-3gB" firstAttribute="height" secondItem="rT1-3b-VDL" secondAttribute="height" multiplier="0.2" id="SBe-kA-aED"/>
                                             <constraint firstItem="VjF-hD-3gB" firstAttribute="top" secondItem="rT1-3b-VDL" secondAttribute="top" id="Yie-fM-K7N"/>
-                                            <constraint firstItem="wtn-BM-5qJ" firstAttribute="centerX" secondItem="rT1-3b-VDL" secondAttribute="centerX" constant="-5" id="Zxc-mz-TuO"/>
                                             <constraint firstItem="g9S-1D-tKI" firstAttribute="top" secondItem="VjF-hD-3gB" secondAttribute="bottom" id="a1P-RX-0ps"/>
                                             <constraint firstItem="g9S-1D-tKI" firstAttribute="leading" secondItem="rT1-3b-VDL" secondAttribute="leading" id="aAC-Sl-jle"/>
                                             <constraint firstAttribute="trailing" secondItem="VjF-hD-3gB" secondAttribute="trailing" id="biS-yy-QBM"/>
                                             <constraint firstItem="59F-N4-MVp" firstAttribute="top" secondItem="VjF-hD-3gB" secondAttribute="bottom" id="bvM-Cg-Khr"/>
+                                            <constraint firstAttribute="bottom" secondItem="yYi-Cn-nSK" secondAttribute="bottom" constant="2" id="c4A-Mb-xaH"/>
                                             <constraint firstAttribute="bottom" secondItem="g9S-1D-tKI" secondAttribute="bottom" id="edI-dl-C7w"/>
                                             <constraint firstItem="UlK-pR-uDN" firstAttribute="width" secondItem="rT1-3b-VDL" secondAttribute="width" multiplier="0.3" id="hHX-cR-iQ3"/>
                                             <constraint firstItem="g9S-1D-tKI" firstAttribute="width" secondItem="rT1-3b-VDL" secondAttribute="width" multiplier="0.35" id="ibk-wB-WlF"/>
                                             <constraint firstItem="59F-N4-MVp" firstAttribute="width" secondItem="rT1-3b-VDL" secondAttribute="width" multiplier="0.35" id="p6Z-Ym-Asz"/>
                                             <constraint firstAttribute="bottom" secondItem="g9S-1D-tKI" secondAttribute="bottom" id="pjn-vd-26z"/>
-                                            <constraint firstAttribute="bottom" secondItem="wtn-BM-5qJ" secondAttribute="bottom" constant="3" id="qMt-J4-O3H"/>
                                             <constraint firstItem="g9S-1D-tKI" firstAttribute="top" secondItem="VjF-hD-3gB" secondAttribute="bottom" id="yY0-bU-u9R"/>
                                             <constraint firstAttribute="bottom" secondItem="UlK-pR-uDN" secondAttribute="bottom" id="yd8-em-LRn"/>
                                             <constraint firstAttribute="bottom" secondItem="59F-N4-MVp" secondAttribute="bottom" id="zhD-LL-yhN"/>
                                         </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="force">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="velocity">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="damping">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autohide" value="NO"/>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="autostart" value="YES"/>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="rotate">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="duration">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </view>
                                     <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tdi-v3-XKs">
                                         <rect key="frame" x="8" y="454" width="120" height="30"/>
@@ -161,6 +184,9 @@
                         <barButtonItem key="backBarButtonItem" title="  " id="Us7-We-47m"/>
                     </navigationItem>
                     <connections>
+                        <outlet property="labelDataGiornata" destination="VjF-hD-3gB" id="SV8-Uf-3v3"/>
+                        <outlet property="labelLocale" destination="g9S-1D-tKI" id="hWz-Dw-cNz"/>
+                        <outlet property="labelOspite" destination="59F-N4-MVp" id="J1t-BF-bcp"/>
                         <outlet property="labelRisultato" destination="bZJ-LG-vym" id="vZK-0Y-s4g"/>
                         <outlet property="viewUltimaPartita" destination="rT1-3b-VDL" id="UEM-Iq-nWg"/>
                     </connections>
