@@ -8,62 +8,41 @@
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>1</integer>
 		</dict>
 		<key>FLAnimatedImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>2</integer>
-		</dict>
-		<key>GoogleToolboxForMac.xcscheme</key>
-		<dict>
-			<key>orderHint</key>
-			<integer>9</integer>
 		</dict>
 		<key>Kingfisher.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>3</integer>
 		</dict>
 		<key>NYTPhotoViewer-NYTPhotoViewer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>5</integer>
 		</dict>
 		<key>NYTPhotoViewer.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>4</integer>
 		</dict>
 		<key>Pods-US Real San Felice.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>6</integer>
 		</dict>
 		<key>Spring.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>7</integer>
 		</dict>
 		<key>SwiftyJSON.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
-			<key>orderHint</key>
-			<integer>8</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
@@ -74,16 +53,6 @@
 			<true/>
 		</dict>
 		<key>2719BDA3DA065F870E19C46199DB1C8B</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>3783F5BCD8F8FC1FE06364100C68D637</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>4ADE95F6B06B65E185F4BDF43E6282BD</key>
 		<dict>
 			<key>primary</key>
 			<true/>
@@ -104,16 +73,6 @@
 			<true/>
 		</dict>
 		<key>8A1EDF97FAFF04A3AF33E2C1AC4F89EB</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>92BB131FA876445E027D20AE23EA7B5F</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>AA3988E91B2BF623278CF71DFE8B362E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

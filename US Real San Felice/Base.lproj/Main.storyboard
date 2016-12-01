@@ -253,7 +253,7 @@
                                 <subviews>
                                     <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelectionDuringEditing="YES" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="m18-Wq-VEz">
                                         <rect key="frame" x="10" y="10" width="300" height="283"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <color key="backgroundColor" red="0.17788213489999999" green="0.2227549553" blue="0.4094882011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </tableView>
                                 </subviews>
                                 <constraints>
@@ -498,6 +498,6 @@
         <image name="scudetto_opaco" width="445" height="608"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="n1Q-4i-dmV"/>
+        <segue reference="RYT-Xh-jwh"/>
     </inferredMetricsTieBreakers>
 </document>
