@@ -35,6 +35,7 @@ class HomeController:  GalleryController{
         viewUltimaPartita.layer.masksToBounds = true
         viewUltimaPartita.layer.cornerRadius = 5
         loadUltimaPartita ()
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
     

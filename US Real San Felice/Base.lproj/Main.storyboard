@@ -70,12 +70,12 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yYi-Cn-nSK">
-                                                <rect key="frame" x="137.5" y="94" width="25" height="25"/>
+                                                <rect key="frame" x="137.5" y="94" width="30" height="25"/>
                                                 <constraints>
-                                                    <constraint firstAttribute="width" constant="25" id="BqE-Ch-d04"/>
+                                                    <constraint firstAttribute="width" constant="30" id="BqE-Ch-d04"/>
                                                     <constraint firstAttribute="height" constant="25" id="Eft-eN-CVx"/>
                                                 </constraints>
-                                                <state key="normal" backgroundImage="ic_perm_media_white"/>
+                                                <state key="normal" backgroundImage="ic_camera_alt_white"/>
                                                 <connections>
                                                     <action selector="vediGallery:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XUs-jV-ffJ"/>
                                                 </connections>
@@ -88,7 +88,7 @@
                                             <constraint firstItem="59F-N4-MVp" firstAttribute="leading" secondItem="UlK-pR-uDN" secondAttribute="trailing" id="8cB-ah-740"/>
                                             <constraint firstItem="VjF-hD-3gB" firstAttribute="leading" secondItem="rT1-3b-VDL" secondAttribute="leading" id="CP0-kG-Xyc"/>
                                             <constraint firstItem="g9S-1D-tKI" firstAttribute="leading" secondItem="rT1-3b-VDL" secondAttribute="leading" id="Eay-ba-8R4"/>
-                                            <constraint firstItem="yYi-Cn-nSK" firstAttribute="centerX" secondItem="rT1-3b-VDL" secondAttribute="centerX" id="ObO-7Q-EzZ"/>
+                                            <constraint firstItem="yYi-Cn-nSK" firstAttribute="centerX" secondItem="rT1-3b-VDL" secondAttribute="centerX" constant="2.5" id="ObO-7Q-EzZ"/>
                                             <constraint firstItem="VjF-hD-3gB" firstAttribute="height" secondItem="rT1-3b-VDL" secondAttribute="height" multiplier="0.2" id="SBe-kA-aED"/>
                                             <constraint firstItem="VjF-hD-3gB" firstAttribute="top" secondItem="rT1-3b-VDL" secondAttribute="top" id="Yie-fM-K7N"/>
                                             <constraint firstItem="g9S-1D-tKI" firstAttribute="top" secondItem="VjF-hD-3gB" secondAttribute="bottom" id="a1P-RX-0ps"/>
@@ -493,7 +493,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ic_perm_media_white" width="24" height="24"/>
+        <image name="ic_camera_alt_white" width="24" height="24"/>
         <image name="logohome" width="445" height="614"/>
         <image name="scudetto_opaco" width="445" height="608"/>
     </resources>
