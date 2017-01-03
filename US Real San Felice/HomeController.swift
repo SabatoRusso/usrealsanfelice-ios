@@ -24,8 +24,16 @@ class HomeController:  GalleryController{
     
     @IBOutlet var labelDataGiornata: UILabel!
     
+    @IBOutlet var viewNews: SpringView!
+    
+    @IBOutlet var imgNews: UIImageView!
+    
+    
+    @IBOutlet var titleNews: UILabel!
+    
      
     fileprivate var  partita:Partita = Partita();
+    let notizia:Notizia = Notizia();
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +42,8 @@ class HomeController:  GalleryController{
         labelRisultato.layer.cornerRadius = 5
         viewUltimaPartita.layer.masksToBounds = true
         viewUltimaPartita.layer.cornerRadius = 5
-        loadUltimaPartita ()
+        loadUltimaPartita ();
+        loadUltimaNotizia();
         
         // Do any additional setup after loading the view, typically from a nib.
     }
@@ -96,7 +105,43 @@ class HomeController:  GalleryController{
         }
     }
     
+    func loadUltimaNotizia() {
+        
+        Alamofire.request(Config.pathUltimaNotizia).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                var json = JSON(value)
+                
+                json = json[0];
+                
+                self.notizia.titolo  = json["titolo"].string!
+                self.notizia.testo   = json["testo"].string!
+                self.notizia.urlImmagine = json["img"].string!
+                self.notizia.data = json["data"].string!
+                
+                self.titleNews.text = self.notizia.titolo;
+                
+                let url_notizia = URL(string: self.notizia.urlImmagine)
+                self.imgNews.kf.setImage(with: url_notizia, placeholder: nil,
+                                    options: [.transition(ImageTransition.fade(1))])
+                self.viewNews.animation = "squeezeDown"
+                self.viewNews.isHidden = false;
+                self.viewNews.animate()
+                
+                
+                
+                
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
     
+    
+    @IBAction func goNotizia(_ sender: Any) {
+         self.performSegue(withIdentifier: "go_notizia"   , sender:self)
+        
+    }
     
     @IBAction func vediGallery(_ sender: Any) {
         
@@ -106,6 +151,21 @@ class HomeController:  GalleryController{
         present(photosViewController, animated: true, completion: nil)
         updateImagesOnPhotosViewController(photosViewController, afterDelayWithPhotos: photosGallery)
         
+    }
+    
+    
+    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        // Get the new view controller using segue.destinationViewController.
+        // Pass the selected object to the new view controller.
+        if  segue.identifier == "go_notizia" {
+        let nav = segue.destination as! NotiziaController
+            nav.notizia = self.notizia;
+            
+        }
+        
+        //let nav = segue.destination as! DettaglioGiocatoreController
+       // nav.giocatore = giocaSelct;
     }
     
     

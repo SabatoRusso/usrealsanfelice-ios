@@ -26,7 +26,7 @@ class DettaglioGiocatoreController: UIViewController {
           imgGiocatore.kf.setImage(with: url_avatar)
         
         numero.layer.masksToBounds = true
-        numero.layer.cornerRadius = 17.5
+        numero.layer.cornerRadius = 15.0
         numero.text = giocatore.numeroMaglia
         loadDettagli ()
         // Do any additional setup after loading the view.

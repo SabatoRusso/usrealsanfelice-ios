@@ -16,4 +16,8 @@ struct Config {
     static let pathRosa = pathSite + "rest.php?f=1";
     static let pathConvocati = pathSite + "rest.php?f=2";
     static let pathUltimaPartita = pathSite + "rest.php?f=5";
+    static let pathClassifica = pathSite + "rest.php?f=4";
+    static let pathProssimoTurno = pathSite + "rest.php?f=3";
+    static let pathUltimaNotizia = pathSite + "rest.php?f=6";
+
 }

@@ -28,14 +28,15 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
         self.tableRosa.dataSource = self;
         self.tableRosa.delegate = self;
         
-        
         let nib = UINib(nibName: "GiocatoreViewCell", bundle: nil)
         tableRosa.register(nib, forCellReuseIdentifier: "row_giocatore")
         
+        
         loadRosa ()
         let url_rosa = URL(string: Config.imgRosa)
-        imgRosa.kf.setImage(with: url_rosa)
-      
+        imgRosa.kf.setImage(with: url_rosa, placeholder: nil,
+                            options: [.transition(ImageTransition.fade(1))])
+        
     
     }
     
@@ -63,6 +64,8 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
     }
     
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+ 
         let cell = self.tableRosa.dequeueReusableCell(withIdentifier: "row_giocatore",for: indexPath as IndexPath) as? GiocatoreViewCell
         
         let row =   indexPath.row
@@ -78,7 +81,7 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
         
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor(netHex:0x222955)
-        cell?.selectedBackgroundView = backgroundView;
+        //cell?.selectedBackgroundView = backgroundView;
         return cell!;
         
     }
@@ -92,7 +95,7 @@ class RosaController: UIViewController ,UITableViewDataSource,UITableViewDelegat
     
  func tableView(_ tableView: UITableView, didHighlightRowAt indexPath: IndexPath) {
         //  self.performSegueWithIdentifier("go_to_prodotti"   , sender:self)
-        let row = indexPath.row
+         let row = indexPath.row
          self.giocaSelct = giocatori[row];
          self.performSegue(withIdentifier: "go_dettaglio_giocatore"   , sender:self)
     

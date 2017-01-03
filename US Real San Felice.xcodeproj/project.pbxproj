@@ -16,6 +16,15 @@
 		1B3F30D21DEC239800D1C442 /* ViewDettagli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F30D11DEC239800D1C442 /* ViewDettagli.swift */; };
 		1B3F30D41DEC4A2000D1C442 /* ConvocatiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F30D31DEC4A2000D1C442 /* ConvocatiController.swift */; };
 		1B43E7EA1DEECAD900E6E358 /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B43E7E91DEECAD900E6E358 /* GalleryController.swift */; };
+		B77212101E155E60005B4293 /* TitoloPartita.swift in Sources */ = {isa = PBXBuildFile; fileRef = B772120F1E155E60005B4293 /* TitoloPartita.swift */; };
+		B77212121E155EDE005B4293 /* ViewPartita.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77212111E155EDE005B4293 /* ViewPartita.xib */; };
+		B77212141E155FAD005B4293 /* PartitaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77212131E155FAD005B4293 /* PartitaView.swift */; };
+		B7766A631DFDA5F700F32B14 /* ClassificaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7766A621DFDA5F700F32B14 /* ClassificaController.swift */; };
+		B7766A661DFDA61E00F32B14 /* ClassificaViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7766A641DFDA61E00F32B14 /* ClassificaViewCell.swift */; };
+		B7766A671DFDA61E00F32B14 /* ClassificaViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7766A651DFDA61E00F32B14 /* ClassificaViewCell.xib */; };
+		B7766A691DFDAA7100F32B14 /* Squadra.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7766A681DFDAA7100F32B14 /* Squadra.swift */; };
+		B7766A6B1DFDD47A00F32B14 /* ProssimoTurnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7766A6A1DFDD47A00F32B14 /* ProssimoTurnoController.swift */; };
+		B7766A6E1DFDEF1000F32B14 /* ViewTitoloPartita.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7766A6D1DFDEF1000F32B14 /* ViewTitoloPartita.xib */; };
 		B77ABF101DE9E872006385AE /* RosaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF0F1DE9E872006385AE /* RosaController.swift */; };
 		B77ABF131DE9EAB2006385AE /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF121DE9EAB2006385AE /* Config.swift */; };
 		B77ABF171DE9EECB006385AE /* GiocatoreViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF151DE9EECB006385AE /* GiocatoreViewCell.swift */; };
@@ -25,6 +34,8 @@
 		B77ABF201DEA08E8006385AE /* DettaglioGiocatoreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77ABF1F1DEA08E8006385AE /* DettaglioGiocatoreController.swift */; };
 		B77ABF221DEA1973006385AE /* ViewDettaglio.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77ABF211DEA1973006385AE /* ViewDettaglio.xib */; };
 		B7BDEA031DEE4490008B3E6E /* ImageGallery.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7BDEA021DEE4490008B3E6E /* ImageGallery.swift */; };
+		B7E62B641E1A5F770017EEEC /* Notizia.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E62B631E1A5F770017EEEC /* Notizia.swift */; };
+		B7E62B661E1A69D00017EEEC /* NotiziaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E62B651E1A69D00017EEEC /* NotiziaController.swift */; };
 		B7EE8DCF1DEE21D100A0A863 /* Partita.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7EE8DCE1DEE21D100A0A863 /* Partita.swift */; };
 		D5CCE11AEACAA6BC9D311FFA /* Pods_US_Real_San_Felice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3EB614648CBA49CC88FEA520 /* Pods_US_Real_San_Felice.framework */; };
 /* End PBXBuildFile section */
@@ -44,6 +55,15 @@
 		3EB614648CBA49CC88FEA520 /* Pods_US_Real_San_Felice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_US_Real_San_Felice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4742A8594C7FEF2B3E81DBBE /* Pods-US Real San Felice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-US Real San Felice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-US Real San Felice/Pods-US Real San Felice.debug.xcconfig"; sourceTree = "<group>"; };
 		B006751C5D3A987B145CB180 /* Pods-US Real San Felice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-US Real San Felice.release.xcconfig"; path = "Pods/Target Support Files/Pods-US Real San Felice/Pods-US Real San Felice.release.xcconfig"; sourceTree = "<group>"; };
+		B772120F1E155E60005B4293 /* TitoloPartita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitoloPartita.swift; sourceTree = "<group>"; };
+		B77212111E155EDE005B4293 /* ViewPartita.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewPartita.xib; sourceTree = "<group>"; };
+		B77212131E155FAD005B4293 /* PartitaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartitaView.swift; sourceTree = "<group>"; };
+		B7766A621DFDA5F700F32B14 /* ClassificaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificaController.swift; sourceTree = "<group>"; };
+		B7766A641DFDA61E00F32B14 /* ClassificaViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassificaViewCell.swift; sourceTree = "<group>"; };
+		B7766A651DFDA61E00F32B14 /* ClassificaViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ClassificaViewCell.xib; sourceTree = "<group>"; };
+		B7766A681DFDAA7100F32B14 /* Squadra.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Squadra.swift; sourceTree = "<group>"; };
+		B7766A6A1DFDD47A00F32B14 /* ProssimoTurnoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProssimoTurnoController.swift; sourceTree = "<group>"; };
+		B7766A6D1DFDEF1000F32B14 /* ViewTitoloPartita.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewTitoloPartita.xib; sourceTree = "<group>"; };
 		B77ABF0F1DE9E872006385AE /* RosaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RosaController.swift; sourceTree = "<group>"; };
 		B77ABF121DE9EAB2006385AE /* Config.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
 		B77ABF151DE9EECB006385AE /* GiocatoreViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GiocatoreViewCell.swift; sourceTree = "<group>"; };
@@ -53,6 +73,8 @@
 		B77ABF1F1DEA08E8006385AE /* DettaglioGiocatoreController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DettaglioGiocatoreController.swift; sourceTree = "<group>"; };
 		B77ABF211DEA1973006385AE /* ViewDettaglio.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewDettaglio.xib; sourceTree = "<group>"; };
 		B7BDEA021DEE4490008B3E6E /* ImageGallery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageGallery.swift; sourceTree = "<group>"; };
+		B7E62B631E1A5F770017EEEC /* Notizia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notizia.swift; sourceTree = "<group>"; };
+		B7E62B651E1A69D00017EEEC /* NotiziaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotiziaController.swift; sourceTree = "<group>"; };
 		B7EE8DCE1DEE21D100A0A863 /* Partita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Partita.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -89,6 +111,7 @@
 		1B349E081DE6CF8600AFBB12 /* US Real San Felice */ = {
 			isa = PBXGroup;
 			children = (
+				B7766A6C1DFDD7E400F32B14 /* views */,
 				B77ABF1C1DE9F6C5006385AE /* to */,
 				B77ABF191DE9F618006385AE /* utility */,
 				B77ABF141DE9EE9B006385AE /* row */,
@@ -104,15 +127,29 @@
 			path = "US Real San Felice";
 			sourceTree = "<group>";
 		};
+		B7766A6C1DFDD7E400F32B14 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				B77ABF211DEA1973006385AE /* ViewDettaglio.xib */,
+				1B3F30D11DEC239800D1C442 /* ViewDettagli.swift */,
+				B7766A6D1DFDEF1000F32B14 /* ViewTitoloPartita.xib */,
+				B772120F1E155E60005B4293 /* TitoloPartita.swift */,
+				B77212111E155EDE005B4293 /* ViewPartita.xib */,
+				B77212131E155FAD005B4293 /* PartitaView.swift */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
 		B77ABF0E1DE9E84B006385AE /* pages */ = {
 			isa = PBXGroup;
 			children = (
 				1B349E0B1DE6CF8600AFBB12 /* HomeController.swift */,
 				B77ABF0F1DE9E872006385AE /* RosaController.swift */,
 				B77ABF1F1DEA08E8006385AE /* DettaglioGiocatoreController.swift */,
-				B77ABF211DEA1973006385AE /* ViewDettaglio.xib */,
-				1B3F30D11DEC239800D1C442 /* ViewDettagli.swift */,
 				1B3F30D31DEC4A2000D1C442 /* ConvocatiController.swift */,
+				B7766A621DFDA5F700F32B14 /* ClassificaController.swift */,
+				B7766A6A1DFDD47A00F32B14 /* ProssimoTurnoController.swift */,
+				B7E62B651E1A69D00017EEEC /* NotiziaController.swift */,
 			);
 			name = pages;
 			sourceTree = "<group>";
@@ -130,6 +167,8 @@
 			children = (
 				B77ABF151DE9EECB006385AE /* GiocatoreViewCell.swift */,
 				B77ABF161DE9EECB006385AE /* GiocatoreViewCell.xib */,
+				B7766A641DFDA61E00F32B14 /* ClassificaViewCell.swift */,
+				B7766A651DFDA61E00F32B14 /* ClassificaViewCell.xib */,
 			);
 			name = row;
 			sourceTree = "<group>";
@@ -149,6 +188,8 @@
 				B77ABF1D1DE9F6D1006385AE /* Giocatore.swift */,
 				B7EE8DCE1DEE21D100A0A863 /* Partita.swift */,
 				B7BDEA021DEE4490008B3E6E /* ImageGallery.swift */,
+				B7766A681DFDAA7100F32B14 /* Squadra.swift */,
+				B7E62B631E1A5F770017EEEC /* Notizia.swift */,
 			);
 			name = to;
 			sourceTree = "<group>";
@@ -233,10 +274,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7766A6E1DFDEF1000F32B14 /* ViewTitoloPartita.xib in Resources */,
+				B77212121E155EDE005B4293 /* ViewPartita.xib in Resources */,
 				1B349E171DE6CF8600AFBB12 /* LaunchScreen.storyboard in Resources */,
 				1B349E141DE6CF8600AFBB12 /* Assets.xcassets in Resources */,
 				B77ABF181DE9EECB006385AE /* GiocatoreViewCell.xib in Resources */,
 				1B349E0F1DE6CF8600AFBB12 /* Main.storyboard in Resources */,
+				B7766A671DFDA61E00F32B14 /* ClassificaViewCell.xib in Resources */,
 				B77ABF221DEA1973006385AE /* ViewDettaglio.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,20 +340,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7766A661DFDA61E00F32B14 /* ClassificaViewCell.swift in Sources */,
 				1B3F30D21DEC239800D1C442 /* ViewDettagli.swift in Sources */,
+				B7766A6B1DFDD47A00F32B14 /* ProssimoTurnoController.swift in Sources */,
 				B77ABF101DE9E872006385AE /* RosaController.swift in Sources */,
+				B77212141E155FAD005B4293 /* PartitaView.swift in Sources */,
 				1B349E0C1DE6CF8600AFBB12 /* HomeController.swift in Sources */,
 				B77ABF131DE9EAB2006385AE /* Config.swift in Sources */,
 				B77ABF1B1DE9F633006385AE /* extensions.swift in Sources */,
 				1B349E121DE6CF8600AFBB12 /* US_Real_San_Felice.xcdatamodeld in Sources */,
 				B77ABF171DE9EECB006385AE /* GiocatoreViewCell.swift in Sources */,
 				1B3F30D41DEC4A2000D1C442 /* ConvocatiController.swift in Sources */,
+				B77212101E155E60005B4293 /* TitoloPartita.swift in Sources */,
+				B7E62B661E1A69D00017EEEC /* NotiziaController.swift in Sources */,
 				1B43E7EA1DEECAD900E6E358 /* GalleryController.swift in Sources */,
 				1B349E0A1DE6CF8600AFBB12 /* AppDelegate.swift in Sources */,
+				B7766A691DFDAA7100F32B14 /* Squadra.swift in Sources */,
 				B7EE8DCF1DEE21D100A0A863 /* Partita.swift in Sources */,
 				B7BDEA031DEE4490008B3E6E /* ImageGallery.swift in Sources */,
+				B7766A631DFDA5F700F32B14 /* ClassificaController.swift in Sources */,
 				B77ABF1E1DE9F6D1006385AE /* Giocatore.swift in Sources */,
 				B77ABF201DEA08E8006385AE /* DettaglioGiocatoreController.swift in Sources */,
+				B7E62B641E1A5F770017EEEC /* Notizia.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
