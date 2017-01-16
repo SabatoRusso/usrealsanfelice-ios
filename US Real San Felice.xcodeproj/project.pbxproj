@@ -16,6 +16,7 @@
 		1B3F30D21DEC239800D1C442 /* ViewDettagli.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F30D11DEC239800D1C442 /* ViewDettagli.swift */; };
 		1B3F30D41DEC4A2000D1C442 /* ConvocatiController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3F30D31DEC4A2000D1C442 /* ConvocatiController.swift */; };
 		1B43E7EA1DEECAD900E6E358 /* GalleryController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B43E7E91DEECAD900E6E358 /* GalleryController.swift */; };
+		B76266071E21361800BD987F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B76266061E21361800BD987F /* GoogleService-Info.plist */; };
 		B77212101E155E60005B4293 /* TitoloPartita.swift in Sources */ = {isa = PBXBuildFile; fileRef = B772120F1E155E60005B4293 /* TitoloPartita.swift */; };
 		B77212121E155EDE005B4293 /* ViewPartita.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77212111E155EDE005B4293 /* ViewPartita.xib */; };
 		B77212141E155FAD005B4293 /* PartitaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77212131E155FAD005B4293 /* PartitaView.swift */; };
@@ -55,6 +56,8 @@
 		3EB614648CBA49CC88FEA520 /* Pods_US_Real_San_Felice.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_US_Real_San_Felice.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4742A8594C7FEF2B3E81DBBE /* Pods-US Real San Felice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-US Real San Felice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-US Real San Felice/Pods-US Real San Felice.debug.xcconfig"; sourceTree = "<group>"; };
 		B006751C5D3A987B145CB180 /* Pods-US Real San Felice.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-US Real San Felice.release.xcconfig"; path = "Pods/Target Support Files/Pods-US Real San Felice/Pods-US Real San Felice.release.xcconfig"; sourceTree = "<group>"; };
+		B76266061E21361800BD987F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B76266081E23F2F900BD987F /* US Real San Felice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "US Real San Felice.entitlements"; sourceTree = "<group>"; };
 		B772120F1E155E60005B4293 /* TitoloPartita.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TitoloPartita.swift; sourceTree = "<group>"; };
 		B77212111E155EDE005B4293 /* ViewPartita.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewPartita.xib; sourceTree = "<group>"; };
 		B77212131E155FAD005B4293 /* PartitaView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartitaView.swift; sourceTree = "<group>"; };
@@ -111,6 +114,7 @@
 		1B349E081DE6CF8600AFBB12 /* US Real San Felice */ = {
 			isa = PBXGroup;
 			children = (
+				B76266081E23F2F900BD987F /* US Real San Felice.entitlements */,
 				B7766A6C1DFDD7E400F32B14 /* views */,
 				B77ABF1C1DE9F6C5006385AE /* to */,
 				B77ABF191DE9F618006385AE /* utility */,
@@ -121,6 +125,7 @@
 				1B349E0D1DE6CF8600AFBB12 /* Main.storyboard */,
 				1B349E131DE6CF8600AFBB12 /* Assets.xcassets */,
 				1B349E151DE6CF8600AFBB12 /* LaunchScreen.storyboard */,
+				B76266061E21361800BD987F /* GoogleService-Info.plist */,
 				1B349E181DE6CF8600AFBB12 /* Info.plist */,
 				1B349E101DE6CF8600AFBB12 /* US_Real_San_Felice.xcdatamodeld */,
 			);
@@ -241,13 +246,21 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0810;
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = "Russo Sabato";
 				TargetAttributes = {
 					1B349E051DE6CF8600AFBB12 = {
 						CreatedOnToolsVersion = 8.1;
 						DevelopmentTeam = PT7ZNLU7CB;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -276,6 +289,7 @@
 			files = (
 				B7766A6E1DFDEF1000F32B14 /* ViewTitoloPartita.xib in Resources */,
 				B77212121E155EDE005B4293 /* ViewPartita.xib in Resources */,
+				B76266071E21361800BD987F /* GoogleService-Info.plist in Resources */,
 				1B349E171DE6CF8600AFBB12 /* LaunchScreen.storyboard in Resources */,
 				1B349E141DE6CF8600AFBB12 /* Assets.xcassets in Resources */,
 				B77ABF181DE9EECB006385AE /* GiocatoreViewCell.xib in Resources */,
@@ -405,6 +419,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -455,6 +470,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -485,8 +501,10 @@
 			baseConfigurationReference = 4742A8594C7FEF2B3E81DBBE /* Pods-US Real San Felice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "US Real San Felice/US Real San Felice.entitlements";
 				DEVELOPMENT_TEAM = PT7ZNLU7CB;
 				INFOPLIST_FILE = "US Real San Felice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = srusso.usrealsanfelice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -500,8 +518,10 @@
 			baseConfigurationReference = B006751C5D3A987B145CB180 /* Pods-US Real San Felice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "US Real San Felice/US Real San Felice.entitlements";
 				DEVELOPMENT_TEAM = PT7ZNLU7CB;
 				INFOPLIST_FILE = "US Real San Felice/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = srusso.usrealsanfelice.ios;
 				PRODUCT_NAME = "$(TARGET_NAME)";

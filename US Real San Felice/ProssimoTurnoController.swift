@@ -88,7 +88,7 @@ class ProssimoTurnoController: UIViewController {
                 self.aggiungiTitolo(data: json["DATA"].string!, giornata: json["GIORNATA"].string!);
                 
                 var i = 1;
-                for (index,subJson):(String, JSON) in json["partite"] {
+                for (_,subJson):(String, JSON) in json["partite"] {
                     self.aggiungiPartita (locale:subJson["locali"].string!, ospite: subJson["ospiti"].string!,idx: i)
                     i = i+1;
                 }
