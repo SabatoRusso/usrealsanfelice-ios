@@ -145,12 +145,15 @@ class HomeController:  GalleryController{
     
     @IBAction func vediGallery(_ sender: Any) {
         
-        let photosViewController = NYTPhotosViewController(photos: self.photosGallery, initialPhoto: self.photosGallery[0] )
+        if(self.photosGallery.count != 0){
+       
+            let photosViewController = NYTPhotosViewController(photos: self.photosGallery, initialPhoto: self.photosGallery[0] )
         photosViewController.delegate = self
         
         present(photosViewController, animated: true, completion: nil)
         updateImagesOnPhotosViewController(photosViewController, afterDelayWithPhotos: photosGallery)
         
+        }
     }
     
     

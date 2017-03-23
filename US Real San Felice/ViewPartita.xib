@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -28,21 +28,32 @@
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y7m-qa-SK2">
+                    <rect key="frame" x="150" y="0.0" width="75" height="667"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
             </subviews>
             <color key="backgroundColor" red="0.17788213489999999" green="0.2227549553" blue="0.4094882011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstItem="1r6-7F-uPj" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="1aR-MM-tFh"/>
                 <constraint firstItem="s9S-W5-cAs" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DkH-ef-Zec"/>
+                <constraint firstAttribute="bottom" secondItem="Y7m-qa-SK2" secondAttribute="bottom" id="PTY-GT-AXu"/>
                 <constraint firstItem="s9S-W5-cAs" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="S4J-kT-KNy"/>
+                <constraint firstItem="Y7m-qa-SK2" firstAttribute="leading" secondItem="s9S-W5-cAs" secondAttribute="trailing" id="Wph-UG-17y"/>
                 <constraint firstAttribute="trailing" secondItem="1r6-7F-uPj" secondAttribute="trailing" id="X6c-mw-17l"/>
                 <constraint firstAttribute="bottom" secondItem="1r6-7F-uPj" secondAttribute="bottom" id="Y1D-zx-r8N"/>
                 <constraint firstItem="s9S-W5-cAs" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="aSN-ou-TMW"/>
                 <constraint firstItem="1r6-7F-uPj" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" multiplier="0.4" id="qyk-W5-QMc"/>
+                <constraint firstItem="Y7m-qa-SK2" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="sEA-WS-rhJ"/>
+                <constraint firstItem="1r6-7F-uPj" firstAttribute="leading" secondItem="Y7m-qa-SK2" secondAttribute="trailing" id="xhR-LO-WJ1"/>
                 <constraint firstAttribute="bottom" secondItem="s9S-W5-cAs" secondAttribute="bottom" id="yt8-db-edg"/>
             </constraints>
             <connections>
                 <outlet property="casa" destination="s9S-W5-cAs" id="keb-K6-lau"/>
                 <outlet property="fuoricasa" destination="1r6-7F-uPj" id="FbU-VR-aIq"/>
+                <outlet property="ris" destination="Y7m-qa-SK2" id="XRa-YA-mHk"/>
             </connections>
             <point key="canvasLocation" x="24.5" y="51.5"/>
         </view>

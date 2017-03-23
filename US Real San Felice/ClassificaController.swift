@@ -55,7 +55,7 @@ class ClassificaController: UIViewController ,UITableViewDataSource,UITableViewD
         cell?.squadra.text = squadre[row].nome;
        
         
-        if cell?.squadra.text == "REAL SAN FELICE" {
+        if cell?.squadra.text == "Real San Felice" {
            
             cell?.backgroundColor =  UIColor(netHex:0xFECA1E)
             cell?.scudetto.image = UIImage(named:"logohome");
@@ -91,17 +91,17 @@ class ClassificaController: UIViewController ,UITableViewDataSource,UITableViewD
             case .success(let value):
                 let json = JSON(value)
                 
-           
-                for (_,subJson):(String, JSON) in json["classifica"] {
+                var i = 1;
+                for (_,subJson):(String, JSON) in json {
                     let squadra:Squadra = Squadra();
                     
                     squadra.nome = subJson["squadra"].string!
-                    squadra.posizione = subJson["posizione"].int! 
+                    squadra.posizione = i;
                     squadra.punti = subJson["punti"].string!
                   
                     
                     self.squadre.append(squadra);
-                    
+                    i += 1 ;
                     
                 }
                 

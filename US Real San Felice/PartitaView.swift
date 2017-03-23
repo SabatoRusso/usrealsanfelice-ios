@@ -11,6 +11,7 @@ import UIKit
 class PartitaView: UIView {
     @IBOutlet var casa: UILabel!
 
+    @IBOutlet weak var ris: UILabel!
     @IBOutlet var fuoricasa: UILabel!
     /*
     // Only override draw() if you perform custom drawing.

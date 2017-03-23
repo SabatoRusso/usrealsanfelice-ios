@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Zu-pM-LGf">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="2Zu-pM-LGf">
     <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -265,7 +265,7 @@
             </objects>
             <point key="canvasLocation" x="2115" y="405"/>
         </scene>
-        <!--Prossimo turno-->
+        <!--Risultati-->
         <scene sceneID="Isk-XG-Nfv">
             <objects>
                 <viewController id="YtE-eq-Yg0" customClass="ProssimoTurnoController" customModule="US_Real_San_Felice" customModuleProvider="target" sceneMemberID="viewController">
@@ -290,7 +290,7 @@
                             <constraint firstItem="wEH-j4-SPh" firstAttribute="leading" secondItem="0yA-bq-Dxu" secondAttribute="leading" id="u4b-VE-blE"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Prossimo turno" selectedImage="ic_camera_alt_white" id="fkD-C5-N03">
+                    <tabBarItem key="tabBarItem" title="Risultati" selectedImage="ic_camera_alt_white" id="fkD-C5-N03">
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="-15"/>
                     </tabBarItem>
                     <connections>
