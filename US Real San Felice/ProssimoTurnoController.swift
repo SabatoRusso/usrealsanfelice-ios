@@ -73,7 +73,7 @@ class ProssimoTurnoController: UIViewController {
         if (ospite == "REAL SAN FELICE"){
             view.fuoricasa.backgroundColor = UIColor(netHex:0xFECA1E)
         }
-        containerScroll.contentSize.height = (100 * CGFloat(idx));
+        containerScroll.contentSize.height = (52 * CGFloat(position));
         view2.addSubview(view);
         containerScroll.addSubview(view2);
         
